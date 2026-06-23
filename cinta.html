@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Love You ❤️</title>
+  <link rel="stylesheet" href="cinta.css">
+</head>
+<body>
+
+<div class="wrap" id="wrap">
+  <div class="stars-bg" id="stars"></div>
+
+  <div class="photo-ring">
+    <div class="ring-pulse"></div>
+    <div class="photo-circle" onclick="document.getElementById('file-input').click()" title="Klik untuk upload foto">
+      <div class="photo-placeholder" id="placeholder">
+        <span class="upload-icon">📷</span>
+        <span>Klik untuk<br>upload foto</span>
+      </div>
+      <img id="preview-img" src="" alt="Foto pacar" style="display:none">
+    </div>
+  </div>
+
+  <div class="title" id="main-title">❤️ I Love You ❤️</div>
+
+  <input class="name-input" id="name-input" placeholder="Nama pacarmu..." maxlength="30">
+
+  <div class="subtitle">
+    Setiap hari bersamamu adalah anugerah terindah dalam hidupku 🌸
+  </div>
+
+  <div class="hearts-row">
+    <button class="heart-btn" onclick="burst()">💖</button>
+    <button class="heart-btn" onclick="burst()">💝</button>
+    <button class="heart-btn" onclick="burst()">💗</button>
+  </div>
+
+  <div class="msg-box" id="msg-box">
+    "Kamu adalah alasan aku tersenyum setiap pagi, dan bintangku di setiap malam." ✨
+  </div>
+
+  <div class="controls">
+    <label class="upload-label">📸 Upload Foto <input type="file" id="file-input" accept="image/*"></label>
+    <button class="btn" onclick="nextMsg()">💌 Pesan Berikutnya</button>
+    <button class="btn" onclick="burst()">🎉 Kirim Cinta!</button>
+  </div>
+
+  <div class="counter" id="counter">Klik hati atau tombol untuk mengirim cinta 💕</div>
+</div>
+
+<script src="cinta.js"></script>
+</body>
+</html>
